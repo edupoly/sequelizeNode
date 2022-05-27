@@ -1,9 +1,8 @@
 const db = require("./app.js");
 const Tutorial = db.tutorials;
-const Op = db.Sequelize.Op;
 const tutorial = {
-  title: "js basics",
-  description: "nice to go",
+  title: "expressjs book",
+  description: "not a bad technology",
   published: true,
 };
 // Save Tutorial in the database
