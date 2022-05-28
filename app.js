@@ -1,8 +1,8 @@
 var createTutorial = require("./main");
 const tutorial = {
-  title: "pro reactjs",
-  description: "deep dive into component performance",
-  published: false,
+  title: "basic postgresh",
+  description: "good for beginners",
+  published: true,
 };
 
 createTutorial(tutorial);

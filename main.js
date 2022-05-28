@@ -5,7 +5,9 @@ async function createTutorial(tutorial) {
   const t = await sequelize.transaction();
   try {
     const tutorialStep1 = await Tutorial.create(tutorial, { transaction: t });
-    await t.commit();
+    setTimeout(async function () {
+      await t.commit();
+    }, 1000 * 30);
   } catch (error) {
     await t.rollback();
   }
